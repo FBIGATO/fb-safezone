@@ -53,7 +53,7 @@ CreateThread(function()
                 if not isInSafeZone then
                     isInSafeZone = true
                     Notify("Zona Segura", "Has entrado en una zona segura. No puedes usar armas.", "info")
-                    SendNUIMessage({action = "showZone", label = "🔒 Zona Segura", color = "green"})
+                    SendNUIMessage({action = "showZone", label = "Zona Segura", color = "green", icon = "fa-solid fa-shield-halved"})
                 end
             end
         end
@@ -71,7 +71,7 @@ CreateThread(function()
                 if not isInRedZone then
                     isInRedZone = true
                     Notify("Zona Roja", "¡Cuidado! Has entrado a una zona peligrosa.", "error")
-                    SendNUIMessage({action = "showZone", label = "❌ Zona Roja", color = "red"})
+                    SendNUIMessage({action = "showZone", label = "Zona Roja", color = "red", icon = "fa-solid fa-skull-crossbones"})
                 end
             end
         end
@@ -123,8 +123,9 @@ CreateThread(function()
                     -- Mostrar HUD
                     SendNUIMessage({
                         action = "showZone",
-                        label = zone.label or "⚠️ Zona de Carga",
-                        color = "yellow"
+                        label = zone.label or "Zona de Carga",
+                        color = "yellow",
+                        icon = "fa-solid fa-bolt-lightning"
                     })
                 end
             end
