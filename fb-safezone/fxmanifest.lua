@@ -1,6 +1,6 @@
 fx_version 'cerulean'
 game 'gta5'
-version '0.0.1'
+version '0.0.2'
 description 'Zonas (Segura, Roja, Carga) con HUD y vms_notify'----puedes cambiar el vms-notify por el que uses
 author 'fbigato_j'-----Porfavor no remover el author
 
